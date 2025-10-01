@@ -19,9 +19,10 @@ $table->enum('role', [ 'cliente', 'funcionario' ])->default('cliente');
 
 ```php
 $table->string('nome');
-$table->enum('tamanho', [          'pequena',
-'media',
-'grande'
+$table->enum('tamanho', [
+  'pequena',
+  'media',
+  'grande'
 ]);
 $table->decimal('preco_base', 10,2);
 ```
