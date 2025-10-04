@@ -16,7 +16,7 @@ return new class extends Migration
 
             $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
 
-            $table->deciaml('total', 10,2)->default(0);
+            $table->decimal('total', 10,2)->default(0);
             // Status do pedido
             $table->enum('status', [
                 'criado',
